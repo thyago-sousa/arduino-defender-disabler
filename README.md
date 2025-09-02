@@ -1,6 +1,6 @@
 # BadUSB com Arduino Leonardo: Desativação da Proteção do SO
 
-**Subtítulo:** Prova de Conceito demonstrando um ataque de injeção de teclas (Keystroke Injection) para desabilitar o Microsoft Defender em segundos, explorando o acesso físico a uma máquina.
+Prova de Conceito demonstrando um ataque de injeção de teclas (Keystroke Injection) para desabilitar o Microsoft Defender em segundos, explorando o acesso físico a uma máquina.
 
 ### 🎥 [Link para o Vídeo de Demonstração no YouTube](https://youtu.be/SEU_LINK_AQUI)
 *(Substitua pelo link do seu vídeo quando o tiver upado)*
