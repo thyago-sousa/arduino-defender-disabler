@@ -2,7 +2,7 @@
 
 Prova de Conceito demonstrando um ataque de injeção de teclas (Keystroke Injection) para desabilitar o Microsoft Defender em segundos, explorando o acesso físico a uma máquina.
 
-### 🎥 [Link para o Vídeo de Demonstração](https://youtu.be/SEU_LINK_AQUI](https://youtu.be/vkh13efq-kM?si=Tz2PhtAMAF8ejYz5)
+### 🎥 [Link para o Vídeo de Demonstração](https://youtu.be/vkh13efq-kM?si=Tz2PhtAMAF8ejYz5)
 
 ---
 
