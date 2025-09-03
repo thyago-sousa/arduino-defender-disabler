@@ -2,8 +2,7 @@
 
 Prova de Conceito demonstrando um ataque de injeção de teclas (Keystroke Injection) para desabilitar o Microsoft Defender em segundos, explorando o acesso físico a uma máquina.
 
-### 🎥 [Link para o Vídeo de Demonstração no YouTube](https://youtu.be/SEU_LINK_AQUI)
-*(Substitua pelo link do seu vídeo quando o tiver upado)*
+### 🎥 [Link para o Vídeo de Demonstração](https://youtu.be/SEU_LINK_AQUI](https://youtu.be/vkh13efq-kM?si=Tz2PhtAMAF8ejYz5)
 
 ---
 
@@ -23,7 +22,7 @@ Este projeto é uma prova de conceito (PoC) de um ataque **BadUSB**, que explora
 * **Injeção de Teclas (Keystroke Injection)** via dispositivo HID malicioso. O sistema operacional não consegue distinguir os comandos enviados pelo Arduino dos comandos de um teclado humano.
 
 #### **Objetivo (Payload)**
-* Desabilitar a "Proteção em Tempo Real" do Microsoft Defender no Windows 11. *(Ajuste a versão do Windows se necessário)*
+* Desabilitar a "Proteção em Tempo Real" do Microsoft Defender no Windows 11.
 
 #### **Hardware Necessário**
 * Arduino Leonardo (ou similar com ATmega32U4, como o Pro Micro)
@@ -38,14 +37,14 @@ Este projeto é uma prova de conceito (PoC) de um ataque **BadUSB**, que explora
 O *payload* é executado na função `setup()`, garantindo que a ação ocorra imediatamente após o dispositivo ser conectado e reconhecido.
 
 1.  **Acesso Inicial:** O ataque começa com o atalho `Win + I` para abrir o painel de "Configurações".
-2.  **Navegação Cega:** A navegação é feita primariamente com comandos de teclado (`TAB`, `SETA PARA BAIXO`, `ENTER`). Essa técnica é mais confiável do que usar coordenadas de mouse, pois não é afetada por diferentes resoluções de tela.
+2.  **Navegação Cega:** A navegação é feita primariamente com comandos de teclado (`TAB`, `SETA PARA BAIXO`, `ENTER`).
 3.  **Localização do Alvo:** A sequência de comandos foi calculada para navegar até "Privacidade e segurança" > "Segurança do Windows".
 4.  **Desativação da Proteção:** O script utiliza uma combinação final de teclado e mouse para alternar o *switch* que desativa a proteção em tempo real.
 
 #### **Desafios e Contramedidas**
 
 ##### **Desafios (Perspectiva do Atacante):**
-* **Timing:** Calibrar os `delays` foi crucial. Um `delay` muito curto faz com que o comando seja enviado antes que a UI responda, quebrando o script.
+* **Timing:** Calibrar os `delays` foi desafiador. Um `delay` muito curto faz com que o comando seja enviado antes que a UI responda, quebrando o script.
 * **Variações de UI:** O script é sensível a atualizações do sistema operacional que alterem a ordem ou a estrutura dos menus de configuração.
 
 ##### **Contramedidas (Perspectiva do Defensor):**
